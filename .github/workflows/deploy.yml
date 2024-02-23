@@ -3,7 +3,7 @@ on: push
 jobs:
   first-stage:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - name: Checkoout Code
         uses: actions/checkout@v4
       - name: Install Node.js
