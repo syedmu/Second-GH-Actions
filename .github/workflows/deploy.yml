@@ -2,16 +2,16 @@ name: Second-GH
 on: push
 jobs:
   first-stage:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Checkoout Code
-    uses: actions/checkout@v4
-  - name: Install Node.js
-    uses: actions/setup-node@v4
-    with:
-      node-version: 18
-  - name: Dependency Install
-    run: npm ci
-  - name: Run tests
-    run: npm test
+    runs-on: ubuntu-latest
+      steps:
+      - name: Checkoout Code
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Dependency Install
+        run: npm ci
+      - name: Run tests
+        run: npm test
   
